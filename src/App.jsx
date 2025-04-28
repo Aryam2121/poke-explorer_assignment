@@ -74,7 +74,7 @@ const App = () => {
 
       <div className="max-w-6xl mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row gap-4 mb-6">
-          <SearchBar value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
           <TypeFilter value={selectedType} onChange={(e) => setSelectedType(e.target.value)} />
         </div>
 
